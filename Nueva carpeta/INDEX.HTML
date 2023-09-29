@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>PARCIAL 1</title>
+    <style>
+        /* Estilo para el cuerpo de la página */
+        body {
+            background-image: url('https://becas-mexico.mx/wp-content/uploads/2019/04/becas-mexico-2019-estudia-en-la-universidad-politecnica-de-tlaxcala.jpg');
+            background-repeat: no-repeat; 
+            background-attachment: fixed;
+            background-size: cover; 
+            margin: 0; /* Elimina el margen predeterminado del cuerpo */
+            padding: 0; /* Elimina el relleno predeterminado del cuerpo */
+            color: white; /* Cambia el color del texto a blanco (opcional) */
+        }
+
+        /* Estilo para el título */
+        h1 {
+            text-align: center; /* Centra el texto horizontalmente */
+        }
+
+        /* Estilo para los subtítulos */
+        h2 {
+            text-align: center; /* Centra el texto horizontalmente */
+        }
+
+        /* Estilo para el espacio de texto */
+        .texto {
+            text-align: center; /* Centra el texto horizontalmente */
+            margin: 20px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+        }
+
+        /* Estilo para la imagen de carga */
+        .imagen-carga {
+            display: block;
+            margin: 0 auto;
+            width: 400px; /* Ajusta el ancho de la imagen de carga */
+            height: 400px; /* Ajusta la altura de la imagen de carga */
+            position: fixed;
+            top: 50%; /* Coloca la imagen en el centro verticalmente */
+            left: 50%; /* Coloca la imagen en el centro horizontalmente */
+            transform: translate(-50%, -50%); /* Centra la imagen correctamente */
+            z-index: 9999; /* Asegura que la imagen esté por encima de todo */
+        }
+    </style>
+</head>
+<body>
+    <!-- Imagen de carga al inicio -->
+    <img src="https://static.wixstatic.com/media/294817_aef433e9aa43401f8076613982aaf792~mv2.gif" alt="Cargando..." class="imagen-carga">
+
+    <!-- Título -->
+    <h1>PARCIAL 1</h1>
+
+    <!-- Subtítulo 1 -->
+    <h2>EVIDENCIAS</h2>
+
+    <!-- Subtítulo 2 -->
+    <h2>JONATHAN ALFONSO XOCHICALE REYES</h2>
+
+    <!-- Espacio para agregar texto -->
+    <div class="texto">
+        <!-- Puedes agregar tu texto aquí -->
+    </div>
+
+    <!-- Script para ocultar la imagen de carga después de 5 segundos -->
+    <script>
+        setTimeout(function() {
+            var imagenCarga = document.querySelector(".imagen-carga");
+            if (imagenCarga) {
+                imagenCarga.style.display = "none";
+            }
+        }, 9000);
+    </script>
+</body>
+</html>
